@@ -1,0 +1,144 @@
+/* Start Achievements */
+.achievements .achives-content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+@media (max-width: 991px) {
+  .achievements .achives-content {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .achievements .achives-content .image-box {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .achievements .achives-content .image-box {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .achievements .about {
+    text-align: center;
+  }
+}
+.achievements .about p {
+  line-height: var(--main-line-height);
+  margin: 1.5rem 0 2rem;
+  color: var(--color-light);
+}
+.achievements .about .stats {
+  display: flex;
+  gap: 1rem;
+}
+.achievements .stats .box {
+  background-color: var(--color-bg1);
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  text-align: center;
+  transition: var(--main-transition);
+}
+@media (max-width: 767px) {
+  .achievements .stats {
+    flex-wrap: wrap;
+  }
+}
+.achievements .box:hover {
+  background-color: var(--color-bg2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.achievements .box .icon-box {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+.achievements .box .icon-box:nth-of-type(1) {
+  background-color: var(--color-danger);
+}
+.achievements .box:nth-of-type(2) .icon-box {
+  background-color: var(--color-success);
+}
+.achievements .box:nth-of-type(3) .icon-box {
+  background-color: var(--color-primary);
+}
+.achievements .box h5 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+.achievements .box .type {
+  color: var(--color-light);
+}
+/* End Achievements */
+
+/* Start Team */
+.team {
+  background-color: var(--color-bg1);
+}
+.team h2 {
+  text-align: center;
+}
+.team .team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.team .team-members .member {
+  background-color: var(--color-bg2);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+}
+.team .member .image-box {
+  border-radius: 0.7rem;
+  overflow: hidden;
+  filter: grayscale(1);
+  transition: var(--main-transition);
+}
+.team .member:hover .image-box {
+  filter: grayscale(0);
+}
+.team .member h4 {
+  margin: 1.3rem 0;
+}
+.team .member span {
+  color: var(--color-light);
+}
+.team .member .member-social {
+  background-color: var(--color-primary);
+  position: absolute;
+  right: -100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 1rem 0 0 1rem;
+  transition: var(--main-transition) right;
+  overflow: hidden;
+}
+.team .member:hover .member-social {
+  right: 0;
+}
+.team .member .member-social a {
+  display: block;
+  padding: 1rem;
+  color: var(--color-white);
+  transition: var(--main-transition);
+}
+.team .member .member-social a:hover {
+  background-color: var(--color-bg2);
+}
+/* End Team */
+footer {
+  border-top: 1px solid #414040;
+  box-shadow: 0 0.2rem 0.3rem 0 #4a4a4a;
+}
